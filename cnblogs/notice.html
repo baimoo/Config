@@ -1,0 +1,118 @@
+<!--博客侧边栏公告-->
+<script type="text/javascript">
+    // 配置文档：https://www.dbnuo.com/Cnblogs-Theme-SimpleMemory/docs/v2/#
+    window.cnblogsConfig = {
+        info: {
+            name: '白墨', // 用户名，文章底部信息也使用它
+            startDate: '2021-05-12', // 入园时间，年-月-日。入园时间查看方法：鼠标停留园龄时间上，会显示入园时间
+            avatar: 'https://i.loli.net/2021/05/13/et1UFcaKilIYAZC.png', // 用户头像
+            blogIcon: 'https://i.loli.net/2021/05/13/et1UFcaKilIYAZC.png',//网站图标
+        },
+        banner: {
+            home: {
+                // 首图，多图用英文逗号隔开
+                background: [                    "https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/images/6d995b207bae4175ff28.webp"
+                ],
+                //主页banner上的标语，设置此选项会显示自定义文字，默认为空，自动获取一句。
+                title:[ '我是白墨，一个热爱学习与划水的矛盾体',
+                    '我是白墨，我一直在进步！',
+                    '我是白墨，我只想暴富！',
+                    '我是白墨，我正在追番中...',
+                    '好愁啊，怎么才能胖一点呢...',
+                ],
+            },
+        },
+        sidebar: {
+            //侧边栏个人信息背景图片Url
+            infoBackground: 'https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/images/82deab5871314fe2ef83.webp',
+            // 列表数据 ['导航名称', '链接', 'icon']
+            navList: [
+                ['CSDN', 'https://blog.csdn.net/weixin_43742828', 'icon-marketing_fill']
+            ]
+        },
+        //进度条
+        progressBar: {
+            //颜色
+            color: '#ffa500'
+        },
+        //页脚
+        footer: {
+            text: {
+                //左侧文字
+                left: '穷则独善其身',
+                right: '达则兼济天下'
+            },
+            //页脚标语字体图标
+            iconFont: {
+                icon:  "icon-xl",
+                color: "red",
+                fontSize: "16px"
+            }
+        },
+        //友情链接
+        links: {
+            //页脚友链
+            footer: [
+                ["友情链接", '#'],
+                ["欢迎私信", '#'],
+                ["申请坑位", '#'],
+                ["相互关注", '#'],
+                ["互访！！", '#']
+            ]
+        },
+        //右下角菜单
+        rtMenu: {
+            //普通二维码
+            qrCode: 'https://i.loli.net/2021/05/10/Yf2M1TGxZFWig85.png',
+            //赞赏二维码
+            reward: {
+                alipay: 'https://i.loli.net/2021/05/13/A9hnmY5RXO8ofuc.png', // 支付宝收款码
+                wechatpay: 'https://i.loli.net/2021/05/13/YqsAyonFG74PNwM.png' // 微信收款码
+            }
+            //调至底部（JQ选择器）
+            //downScrollDom: '#blog_post_info_block'
+        },
+        //日/夜间模式切换。页面使用日/夜间模式优先级：用户设置 > 自动切换 > 默认。
+        switchDayNight: {
+            enable: true,
+            auto: {
+                enable: true
+            }
+        },
+        //代码
+        /** 所有可配置项
+         cnblogs: 使用博客园默认代码高亮样式。
+         hljs: 使用 Highlighting 插件渲染代码高亮样式。
+         */
+        code: {
+            type: 'hljs',
+            theme: 'atom-one-dark-reasonable',
+            options: {
+                //限制代码块高度
+                maxHeight: '70vh',
+                //行号显示
+                line: true,
+                //Mac样式
+                macStyle: true
+            }
+        },
+        //文章底部信息
+        articleSuffix: {
+            //左侧图片
+            imgUrl: 'https://i.loli.net/2021/05/10/Yf2M1TGxZFWig85.png',
+            //关于博主，支持HTML
+            aboutHtml: "</b>我是<b style='color:red'>白墨</b>，一个热爱学习与划水的矛盾体！<span style='color:red'>持续输出，欢迎关注~</span>",
+            //版权声明，支持HTML
+            copyrightHtml: "欢迎规范转载，转载请标注出处与作者！"
+        },
+        //控制台输出
+        consoleList: [
+            ['BaiMoo CNBlogs', 'https://www.cnblogs.com/baimoo'],
+            ['BaiMoo GitHub', 'https://github.com/baimoo'],
+            ['BaiMoo Email', 'whitehw@foxmail.com']
+        ],
+        //网站统计
+        cnzz: "1279924401"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/simpleMemory.js" defer></script>

@@ -2,14 +2,7 @@
     var n, t, r, e, u, i, o = {
         9392: function (n, t, r) {
             var e;
-            /**
-             * @license
-             * Lodash <https://lodash.com/>
-             * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
-             * Released under MIT license <https://lodash.com/license>
-             * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
-             * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-             */n = r.nmd(n), function () {
+            n = r.nmd(n), function () {
                 var u, i = "Expected a function", o = "__lodash_hash_undefined__", a = "__lodash_placeholder__", c = 16,
                     s = 32, l = 64, f = 128, h = 256, p = 1 / 0, v = 9007199254740991, g = NaN, _ = 4294967295,
                     d = [["ary", f], ["bind", 1], ["bindKey", 2], ["curry", 8], ["curryRight", c], ["flip", 512], ["partial", s], ["partialRight", l], ["rearg", h]],
