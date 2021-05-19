@@ -1,4 +1,8 @@
 /*页面定制 CSS 代码*/
+#under_post_card1, #under_post_card2 {
+    /*隐藏底部园子动态&最新新闻*/
+    display: none;
+}
 #blogLogo, .blogStats {
     float: right
 }
@@ -2499,7 +2503,11 @@ div#rightMenu .rightMenuItem {
     font-size: 12px;
     width: 140px;
     text-align: center;
-    margin-top: 5px
+    margin-top: 5px;
+    /*绝对定位至右下*/
+    position: fixed;
+    bottom: 0;
+    right: 50px;
 }
 
 #div_digg .buryit, #div_digg .diggit {
