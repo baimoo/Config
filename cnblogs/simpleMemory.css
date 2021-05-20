@@ -3,6 +3,36 @@
     /*隐藏底部园子动态&最新新闻*/
     display: none;
 }
+/*<img src="https://i.loli.net/2021/05/21/ZbH6Sz8oisgK2BY.gif">*/
+/*推荐图标*/
+#tj {
+    background: url(https://i.loli.net/2021/05/21/ZbH6Sz8oisgK2BY.gif) no-repeat;
+    width: 40px;
+    height: 15px;
+    float: right;
+    margin-left: 6px;
+}
+/*认证图标*/
+#rz {
+    background: url(https://i.loli.net/2021/05/21/ZbH6Sz8oisgK2BY.gif) no-repeat;
+    width: 27px;
+    height: 15px;
+    background-position-x: -45px;
+    float: right;
+    margin-left: 6px;
+}
+/*公告*/
+#notice {
+    float: right;
+    position: relative;
+    top: -80px;
+    width: 70%;
+    height: 95px;
+    text-align: center;
+    color: #0d95e8;
+    overflow: auto;
+}
+/*博客整体样式*/
 #blogLogo, .blogStats {
     float: right
 }
@@ -382,13 +412,13 @@ b {
 }
 
 .postTitle a:active, .postTitle a:visited {
-    color: #3333FF; /*主标题a标签颜色*/
+    color: #94c9ff; /*主标题a标签激活后颜色*/
     transition: color .3s ease
 }
 
 .postTitle a:link {
     background-color: rgba(0, 0, 0, 0);
-    color: #3333FF; /*a标签颜色*/
+    color: #459bf5; /*a标签颜色*/
     font-family: "Open Sans", "Microsoft Jhenghei", "Microsoft Yahei", sans-serif;
     font-size: 3.1rem;
     font-weight: 700;
@@ -406,7 +436,7 @@ b {
 }
 
 .postTitle a:hover {
-    color: #FF3333
+    color: orange/*悬浮颜色*/
 }
 
 .entrylistPostSummary, .postCon {
@@ -2494,7 +2524,9 @@ div#rightMenu .rightMenuItem {
 }
 
 #author_profile {
-    margin-top: 5px
+    margin-top: 5px;
+    width: 100%;/*修改宽度*/
+    height: 95px;/*添加高度*/
 }
 
 #div_digg {

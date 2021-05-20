@@ -116,11 +116,30 @@
     }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/baimoo/Config/cnblogs/simpleMemory.min.js" defer></script>
-<!-- 窗口监控，自动打开左侧菜单-->
+<!-- 自己搞着玩儿的 JS 代码-->
 <script>
     var wNum = 0;
     var resizeTimer = null;
     $(function () {
+        /*自定义公告*/
+        var notice="<div id='notice'>" +
+                "<h1>作者有话说</h1>" +
+                "<div>" +
+                    "后排出售瓜子饮料矿泉水啊！<br/>" +
+                    "走过路过点个关注嘛！<br/>" +
+                    "求关注！求关注！求关注！求关注！求关注！求关注！求关注！求关注！求关注！求关注！" +
+                "</div>" +
+            "</div>";
+        var author=$("#author_profile")[0];
+        if (author!=null){
+            author.innerHTML=author.innerHTML+notice;
+        }
+        /*加个认证*/
+        var rz=$("#author_profile_detail a:first")[0]
+        if (rz!=null){
+            rz.innerHTML=rz.innerHTML+"<div id='rz'></div>";
+        }
+        /*监控窗口大小，自动展开左侧菜单*/
         openMenu()
         $(window).resize(function () {
             if (resizeTimer) {
@@ -132,12 +151,13 @@
         })
     })
 
+    /*展开窗口的方法*/
     function openMenu() {
-        console.log($(window).width())
         if ($(window).width() > 1475 && wNum == 0) {
             wNum = wNum + 1;
             setTimeout(function () {
                 $("#open-button").click()
+                $("content-wrap").css("display","none");
             }, 5000)
         }
     }
