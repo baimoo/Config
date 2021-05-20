@@ -11,10 +11,10 @@
         banner: {
             home: {
                 // 首图，多图用英文逗号隔开
-                background: [                    "https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/images/6d995b207bae4175ff28.webp"
+                background: ["https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/images/6d995b207bae4175ff28.webp"
                 ],
                 //主页banner上的标语，设置此选项会显示自定义文字，默认为空，自动获取一句。
-                title:[ '我是白墨，一个热爱学习与划水的矛盾体',
+                title: ['我是白墨，一个热爱学习与划水的矛盾体',
                     '我是白墨，我一直在进步！',
                     '我是白墨，我只想暴富！',
                     '我是白墨，我正在追番中...',
@@ -44,7 +44,7 @@
             },
             //页脚标语字体图标
             iconFont: {
-                icon:  "icon-xl",
+                icon: "icon-xl",
                 color: "red",
                 fontSize: "16px"
             }
@@ -116,3 +116,29 @@
     }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/baimoo/Config/cnblogs/simpleMemory.min.js" defer></script>
+<!-- 窗口监控，自动打开左侧菜单-->
+<script>
+    var wNum = 0;
+    var resizeTimer = null;
+    $(function () {
+        openMenu()
+        $(window).resize(function () {
+            if (resizeTimer) {
+                clearTimeout(resizeTimer);
+            }
+            resizeTimer = setTimeout(function () {
+                openMenu()
+            }, 100)
+        })
+    })
+
+    function openMenu() {
+        console.log($(window).width())
+        if ($(window).width() > 1475 && wNum == 0) {
+            wNum = wNum + 1;
+            setTimeout(function () {
+                $("#open-button").click()
+            }, 5000)
+        }
+    }
+</script>
