@@ -32,6 +32,17 @@
     color: #0d95e8;
     overflow: auto;
 }
+#left {
+    float: left;
+    width: 64%;
+}
+#right {
+    float: right;
+    width: 95px;
+    height: 95px;
+    background: url(https://i.loli.net/2021/05/10/Yf2M1TGxZFWig85.png) no-repeat;
+    background-size: 100%;
+}
 /*博客整体样式*/
 #blogLogo, .blogStats {
     float: right
