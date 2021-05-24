@@ -76,7 +76,7 @@
         switchDayNight: {
             enable: true,
             auto: {
-                enable: false
+                enable: true
             }
         },
         //代码
@@ -119,6 +119,8 @@
 <!-- 自己搞着玩儿的 JS 代码-->
 <script>
     var wNum = 0;
+    var stamp=0;
+    var stampString=["诶！你要干嘛！","杰哥不要啦~","雅蠛蝶！","给个机会嘛阿sir！","再这样我就喊人了…","哼，选一个吧"];
     var resizeTimer = null;
     $(function () {
         /*自定义公告*/
@@ -132,6 +134,11 @@
         if (rz!=null){
             rz.innerHTML=rz.innerHTML+"<div id='rz'></div>";
         }
+        /*你为什么要给我点踩！onclick="votePost 14765695,'Bury'"*/
+        var buryit=$("#div_digg .buryit");
+        if (buryit!=null){
+            buryit.attr("onclick","stamp1()");
+        }
         /*监控窗口大小，自动展开左侧菜单*/
         openMenu()
         $(window).resize(function () {
@@ -143,15 +150,49 @@
             }, 100)
         })
     })
-
+    /*点踩时的处理*/
+    function stamp1(){
+        $("#digg_tips").css("color","red")
+        if (stamp<stampString.length){
+            $("#digg_tips").text(stampString[stamp]);
+        }
+        switch (stamp){
+            case 0:
+                $("#div_digg .buryit").css({"position":"relative"});
+                $("#div_digg .buryit").animate({bottom:'80px'});
+                break;
+            case 1:
+                $("#div_digg .buryit").animate({right:'80px'});
+                break;
+            case 2:
+                $("#div_digg .buryit").animate({right:'0'});
+                break;
+            case 3:
+                $("#div_digg .buryit").animate({right:'80px'});
+                break;
+            case 4:
+                $("#div_digg .buryit").animate({right:'0'});
+                break;
+            case 5:
+                $("#div_digg .buryit").attr("onclick","");
+                $("#div_digg .buryit").animate({bottom:'0'},500,function (){
+                    $("#div_digg .buryit").remove();
+                    $("#div_digg .diggit").after($("#div_digg .diggit").clone().css({"position":"relative","left":"20px"}));
+                })
+                break;
+            default:
+                break;
+        }
+        stamp=stamp+1;
+    }
     /*展开窗口的方法*/
     function openMenu() {
         if ($(window).width() > 1475 && wNum == 0) {
             wNum = wNum + 1;
             setTimeout(function () {
-                $("#open-button").click()
+                $("#open-button").click();
                 $("#content-wrap").css("display","none");
-            }, 5000)
+            }, 5000);
         }
     }
 </script>
