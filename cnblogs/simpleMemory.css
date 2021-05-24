@@ -423,7 +423,7 @@ b {
 }
 
 .postTitle a:active, .postTitle a:visited {
-    color: #94c9ff; /*主标题a标签激活后颜色*/
+    color: #9a15d5; /*主标题a标签激活后颜色*/
     transition: color .3s ease
 }
 
