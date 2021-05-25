@@ -3,7 +3,6 @@
     /*隐藏底部园子动态&最新新闻*/
     display: none;
 }
-/*<img src="https://i.loli.net/2021/05/21/ZbH6Sz8oisgK2BY.gif">*/
 /*推荐图标*/
 #tj {
     background: url(https://i.loli.net/2021/05/21/ZbH6Sz8oisgK2BY.gif) no-repeat;
@@ -21,7 +20,7 @@
     float: right;
     margin-left: 6px;
 }
-/*公告*/
+/*底部公告*/
 #notice {
     float: right;
     position: relative;
@@ -31,6 +30,20 @@
     text-align: center;
     color: #0d95e8;
     overflow: auto;
+}
+/*侧边栏公告*/
+#gg {
+    padding-left: 20px;
+    color: white;
+    max-height: 100px;
+    overflow: auto;
+    cursor: default;
+}
+#gg img {
+    padding-right: 10px;
+}
+#gg .date {
+    text-align: right;
 }
 #left {
     float: left;
