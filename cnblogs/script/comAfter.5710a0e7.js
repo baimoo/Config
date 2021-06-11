@@ -47,7 +47,7 @@
                     }
                 })(), window.setInterval((() => {
                     let i = t.__tools.getRunDate(t.__config.info.startDate ? t.__config.info.startDate : "2021-01-01");
-                    $("#blogRunTimeSpan").text("博客已经启用 : " + i.daysold + " 天 " + i.hrsold + " 小时 " + i.minsold + " 分 " + i.seconds + " 秒")
+                    $("#blogRunTimeSpan").text("博客生涯已开始 : " + i.daysold + " 天 " + i.hrsold + " 小时 " + i.minsold + " 分 " + i.seconds + " 秒")
                 }), 500), t.__config.cnzz && (t.__timeIds.cnzzTId = window.setInterval((() => {
                     let i = $(".id_cnzz_stat_icon a");
                     if (i.length > 0) {
