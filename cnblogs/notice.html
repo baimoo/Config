@@ -1,6 +1,6 @@
 <!--博客侧边栏公告-->
 <script type="text/javascript">
-    // 配置文档：https://www.dbnuo.com/Cnblogs-Theme-SimpleMemory/docs/v2/#
+    /*配置文档：https://www.dbnuo.com/Cnblogs-Theme-SimpleMemory/docs/v2/#*/
     window.cnblogsConfig = {
         info: {
             name: '白墨', // 用户名，文章底部信息也使用它
@@ -131,6 +131,56 @@
         //网站统计
         cnzz: "1279924401"
     }
+    /*书单配置
+    * title	书目标题，可以不填
+    * books	书目数据
+    * books.cover	封面
+    * books.name	书名
+    * books.formerName	原书名
+    * books.author	作者
+    * books.translator	译者
+    * books.press	出版社
+    * books.year	出版年
+    * books.score	评级1～5，支持.5
+    * books.readDate	阅读日期
+    * books.readPercentage	阅读进度
+    * books.remark	备注
+    * */
+    window.cnblogsConfig.bookList = [
+        {
+            title: '在读中...',
+            books: [
+                {
+                    cover: 'https://images.weserv.nl/?url=https://img3.doubanio.com/view/subject/l/public/s29934992.jpg',
+                    name: '散户的最后一课',
+                    formerName: '',
+                    author: '林皓墨',
+                    translator: '',
+                    press: '南京大学出版社有限公司',
+                    year: '2009-3',
+                    score: 2,
+                    readDate: '21.10.20',
+                    readPercentage: '5%'
+                },
+            ]
+        },
+        {
+            title: '已读-文学作品',
+            books: [
+                {
+                    cover: 'https://images.weserv.nl/?url=https://img3.doubanio.com/view/subject/l/public/s29934992.jpg',
+                    name: '简单逻辑学',
+                    formerName: 'Being Logical: A Guide to Good Thinking',
+                    author: 'D.Q.麦克伦尼',
+                    translator: '',
+                    press: '浙江人民出版社',
+                    year: '2013-6',
+                    score: 1,
+                    remark: '最最基础的逻辑学知识'
+                },
+            ]
+        },
+    ];
 </script>
 <script src="https://cdn.jsdelivr.net/gh/baimoo/Config/cnblogs/simpleMemory.min.js" defer></script>
 <!-- 自己搞着玩儿的 JS 代码-->
