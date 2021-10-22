@@ -56,6 +56,9 @@
     background: url(https://i.loli.net/2021/05/10/Yf2M1TGxZFWig85.png) no-repeat;
     background-size: 100%;
 }
+.bm-book-remark {
+    white-space: break-spaces;
+}
 /*博客整体样式*/
 #blogLogo, .blogStats {
     float: right
