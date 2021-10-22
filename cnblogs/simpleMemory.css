@@ -56,8 +56,13 @@
     background: url(https://i.loli.net/2021/05/10/Yf2M1TGxZFWig85.png) no-repeat;
     background-size: 100%;
 }
+/*书单页，备注超过5行时省略*/
 .bm-book-remark {
     white-space: break-spaces;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
 }
 /*博客整体样式*/
 #blogLogo, .blogStats {
