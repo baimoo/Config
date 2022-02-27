@@ -11,19 +11,21 @@
         banner: {
             home: {
                 /*首图，多图用英文逗号隔开*/
-                background: ["https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/images/6d995b207bae4175ff28.webp"
+                background: [/*"https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.2/dist/images/6d995b207bae4175ff28.webp",*/
+                    "https://s4.ax1x.com/2022/02/27/bmbuO1.png"
                 ],
                 /*主页banner上的标语，设置此选项会显示自定义文字，默认为空，自动获取一句。*/
-                title: ['我是白墨，一个热爱学习与划水的矛盾体',
-                    '我是白墨，我一直在进步！',
-                    '我是白墨，我只想暴富！',
-                    '我是白墨，我正在追番中...',
+                title: ['我是一个热爱学习与划水的矛盾体',
+                    '我一直在进步！',
+                    '我只想暴富！',
+                    '我正在追番中...',
                     '好愁啊，怎么才能胖一点呢...',
                     '公众号「白墨是个程序猿」，欢迎关注呀！',
                     '愿天堂没有早起！！！',
                     '《一人之下》看着真上瘾',
                     '《雪中悍刀行》中的江湖真是波澜壮阔！',
                     '划水一时爽，一直划水一直爽...',
+                    '我是自愿上班的……',
                 ],
             },
         },
@@ -155,13 +157,23 @@
             title: '在读中...',
             books: [
                 {
-                    cover: 'https://images.weserv.nl/?url=https://img9.doubanio.com/view/subject/s/public/s24979935.jpg',
-                    name: '天才相师',
-                    author: '打眼',
-                    score: 4.5,
-                    readDate: '21.12.01',
-                    readPercentage: '75%',
-                    remark: '[小说]'
+                    cover: 'https://images.weserv.nl/?url=https://img2.doubanio.com/view/subject/l/public/s33630473.jpg',
+                    name: '社会性动物：第12版',
+                    formerName: 'The Social Animal',
+                    author: '[美] 艾略特·阿伦森 / [美] 乔舒亚·阿伦森',
+                    score: 4,
+                    readDate: '22.02.01',
+                    readPercentage: '15%',
+                    remark: '[文学]'
+                },
+                {
+                    cover: 'https://images.weserv.nl/?url=https://img2.doubanio.com/view/subject/s/public/s28047221.jpg',
+                    name: '死人经',
+                    author: '冰临天下',
+                    score: 4,
+                    readDate: '2022.2.25',
+                    readPercentage: '10%',
+                    remark: '[小说][有声书]'
                 },
                 {
                     cover: 'https://images.weserv.nl/?url=https://img2.doubanio.com/view/subject/s/public/s33531621.jpg',
@@ -795,6 +807,15 @@
                     score: 5,
                     remark: '初窥心理学。'
                 },
+                {
+                    cover: 'https://images.weserv.nl/?url=https://img1.doubanio.com/view/subject/l/public/s33464978.jpg',
+                    name: '恋爱心理必修课',
+                    author: '段鑫星 / 李文文 / 司莹雪',
+                    readDate: '2021-12-22',
+                    readPercentage: '100%',
+                    score: 4,
+                    remark: '还凑合，可以读一下。不过更适用于没有恋爱经历的人。'
+                },
             ]
         },
         {
@@ -853,10 +874,10 @@
         var notice2 = "<div class=\"m-list-title\" style=\"display: block;\"><span>&gt;&gt;公告&lt;&lt;</span></div>" +
             "<div class=\"m-icon-list\" id=\"sb-sidebarSearchBox\">\n" +
             "    <div id=\"gg\"><img src=\"https://i.loli.net/2021/05/10/Yf2M1TGxZFWig85.png\" alt=\"欢迎关注~\" height=\"90px\" align=\"left\">" +
-            "<p>划水一时爽，一直划水一直爽……</p>" +
-            "<p></p>\n" +
-            "<p></p>\n" +
-            "<p class=\"date\">2021年12月17日</p></div>\n" +
+            "<p>评论看到后会回复，</p>" +
+            "<p>左侧公众号可获取联系方式。</p>\n" +
+            "<p style='color: red;'>承接UiPath项目、问题指导。</p>\n" +
+            "<p class=\"date\">2022年02月27日</p></div>\n" +
             "</div>";
         setTimeout(function () {
             $("#calendar-box").after(notice2)
