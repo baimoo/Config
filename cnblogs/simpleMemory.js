@@ -3605,7 +3605,7 @@
             9769: "hljs/atom-one-dark-css",
             9914: "hljs/paraiso-light-css",
             9996: "hljs/rainbow-css"
-        }[n] || n) + "." + c.h().slice(0, 8) + ".min.js"/*添加min*/
+        }[n] || n) + "." + c.h().slice(0, 8) + ".js"/*删除min。。*/
     }, c.miniCssF = function (n) {
         return "style/" + {
             131: "hljs/atelier-savanna-light-css",
@@ -3714,7 +3714,7 @@
             9769: "hljs/atom-one-dark-css",
             9914: "hljs/paraiso-light-css",
             9996: "hljs/rainbow-css"
-        }[n] + "." + c.h().slice(0, 8) + ".min.css"/*添加min*/
+        }[n] + "." + c.h().slice(0, 8) + ".css"/*删除min。。*/
     }, c.h = function () {
         return "5710a0e790ea76487a25"
     }, c.g = function () {

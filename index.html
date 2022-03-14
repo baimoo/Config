@@ -1,56 +1,62 @@
 <html>
 <head>
-<title>百度一下</title>
-<style>
-input[type="submit"] {
-    font-weight: bold;
-    font-size: 1.3rem;
-	padding:0.5rem;
-	margin-left: 1rem;
-	height: 3rem;
-}
-input[type="text"] {
-	height: 3rem;
-    width: 25rem;
-    font-size: 1.5rem;
-	padding:1rem;
-}
-a{
-	text-decoration:none;
-	color:red;
-	padding-left:0;
-}
-h2{
-	margin-top:3rem;
-	margin-bottom:0rem;
-}
-.nr{
-	font-size:1.5rem;
-}
-</style>
+    <title>百度一下</title>
+    <style>
+        input[type="submit"] {
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            margin-left: 1rem;
+            height: 3rem;
+        }
+
+        input[type="text"] {
+            height: 3rem;
+            width: 25rem;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            padding-left: 0;
+        }
+
+        h2 {
+            margin-top: 3rem;
+            margin-bottom: 0rem;
+        }
+
+        .nr {
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
 <center>
-<br/><br/><br/>
-<h1>百度一下</h1><br/>
-<form method="GET" action="https://www.baidu.com/s">
-<input type="text" id="ys" name="wd" autocomplete="off">
-<input type="submit" value="隐私搜索">
-</form><br/><br/>
-<form method="GET" action="https://www.baidu.com/s">
-<input type="text" name="wd" autocomplete="on">
-<input type="submit" value="普通搜索">
-</form>
-<h2>常用网站</h2><br/>
-<div class="nr">
-<a href="https://www.cnblogs.com/baimoo/" target="_blank">博客园</a>丨
-<a href="https://gitee.com/baimoo/" target="_blank">码云</a>丨
-<a href="https://space.bilibili.com/12387610/bangumi" target="_blank">B站番剧</a>丨
-<a href="https://www.52pojie.cn/" target="_blank">52破解</a>
-<div>
+    <br/><br/><br/>
+    <h1>百度一下</h1><br/>
+    <form method="GET" action="https://www.baidu.com/s">
+        <input type="text" id="ys" name="wd" autocomplete="off">
+        <input type="submit" value="隐私搜索">
+    </form>
+    <br/><br/>
+    <form method="GET" action="https://www.baidu.com/s">
+        <input type="text" name="wd" autocomplete="on">
+        <input type="submit" value="普通搜索">
+    </form>
+    <h2>常用网站</h2><br/>
+    <div class="nr">
+        <a href="https://www.cnblogs.com/baimoo/" target="_blank">博客园</a>丨
+        <a href="https://gitee.com/baimoo/" target="_blank">码云</a>丨
+        <a href="https://space.bilibili.com/12387610/bangumi" target="_blank">B站番剧</a>丨
+        <a href="https://www.52pojie.cn/" target="_blank">52破解</a>丨
+        <a href="https://email.qq.com/" target="_blank">QQ邮箱</a>
+    <div>
 </center>
 <script type="text/javascript">
-document.getElementById("ys").focus();
+    document.getElementById("ys").focus();
 </script>
 </body>
 </html>
