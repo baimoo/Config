@@ -1,10 +1,16 @@
 # Config
 
-## IDEA 导入
+## IDEA 配置
+
+### 全局配置
+
+![image-20220315103427267](https://s2.loli.net/2022/03/15/2omyhjbrvJLYVlx.png)
+
+### 导入配置
 
 `File` -> `Manage IDE Settings` -> `Import Settings...`
 
-## IDEA 插件备份
+### 插件备份
 
 ![插件截图](https://s2.loli.net/2021/12/17/9vTEOCZ57aKLbyt.png)
 
