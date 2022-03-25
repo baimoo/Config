@@ -704,7 +704,7 @@
     }, 1905: function (t, i, e) {
         "use strict";
         /*图片，不知道是啥图片t.exports = e.p + "images/6d995b207bae4175ff28.webp"*/
-        t.exports = e.p + "images/61930743_p0.png"
+        t.exports = e.p + "images/61930743_p0.webp"
     }, 4921: function (t, i, e) {
         "use strict";
         t.exports = e.p + "images/48be92afda99734e94c9.webp"
